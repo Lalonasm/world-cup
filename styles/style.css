@@ -1,0 +1,25 @@
+header {
+    background-color: black;
+    border-radius: 10px;
+}
+
+.header-layout {
+    display: flex;
+}
+
+h1 {
+    font-size: 40px;
+    color: brown;
+}
+
+p {
+    color: white;
+}
+
+.header-button {
+    color: white;
+    text-align: center;
+    background-color: rgb(248, 19, 145);
+    border-radius: 5px;
+    padding: 10px 15px;
+}
