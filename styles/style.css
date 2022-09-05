@@ -46,7 +46,9 @@ h1 {
 .main-menu>div>ul {
     row-gap: 10px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    background-color: black;
 }
 
 .main-menu li a {
@@ -67,18 +69,102 @@ h1 {
 
 .banner {
     display: grid;
-    grid-template-columns: 200px auto;
+    grid-template-columns: repeat(3, 1fr);
 }
+
+.tap-button {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background-color: tomato;
+    border: 2px solid white;
+    display: none;
+}
+
+
 
 footer {
     background-color: black;
+    text-align: center;
 }
 
 hr {
     border: 2px solid white;
 }
 
-.social-media {
-    background-color: bisque;
-    justify-content: center;
+.footer-bar {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
 }
+
+.logo {
+    color: bisque;
+    justify-content: center;
+    margin: 10px;
+}
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .tap-button {
+        display: block;
+
+    }
+
+    .parent-btn {
+        text-align: center;
+    }
+
+    .banner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .main-menu>div>ul {
+        row-gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        background-color: black;
+    }
+
+    .footer-bar {
+        color: white;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media only screen and (max-width:688px) {
+
+    .footer-bar {
+        color: white;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .banner {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .main-menu>div>ul {
+        row-gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        background-color: black;
+    }
+
+    header {
+        background-color: black;
+        border-radius: 10px;
+        padding: 50px;
+        text-align: center;
+
+    }
+
+    .header-layout {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column-reverse;
+    }
